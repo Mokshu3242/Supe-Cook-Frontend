@@ -22,7 +22,7 @@ const Signup = () => {
     };
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/users/", {
+      const response = await fetch("https://supe-cook-backend.vercel.app/users/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
