@@ -27,7 +27,7 @@ const RecipeCard = ({ recipe }) => {
         };
 
         // Fetch user's favorite recipes
-        const response = await axios.get("http://127.0.0.1:8000/get_recipes/", {
+        const response = await axios.get("https://supe-cook-backend.vercel.app/get_recipes/", {
           headers,
         });
 
@@ -62,7 +62,7 @@ const RecipeCard = ({ recipe }) => {
 
       // API request to save recipe data
       const response = await axios.post(
-        "http://127.0.0.1:8000/recipes/",
+        "https://supe-cook-backend.vercel.app/recipes/",
         {
           image: recipe.Image_Name,
           name: recipe.Title,
@@ -99,7 +99,7 @@ const RecipeCard = ({ recipe }) => {
 
       // API request to delete recipe by title
       const response = await axios.delete(
-        `http://127.0.0.1:8000/delete_recipes/?title=${encodeURIComponent(
+        `https://supe-cook-backend.vercel.app/delete_recipes/?title=${encodeURIComponent(
           recipe.Title
         )}`,
         { headers }
