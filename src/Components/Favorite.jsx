@@ -36,7 +36,7 @@ const Favorite = () => {
         }
 
         // Fetch recipes from the backend
-        const response = await axios.get("http://127.0.0.1:8000/get_recipes/", {
+        const response = await axios.get("https://supe-cook-backend.vercel.app/get_recipes/", {
           headers: {
             Authorization: `Bearer ${token}`, // Attach the token in the Authorization header
           },
