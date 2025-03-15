@@ -19,7 +19,7 @@ const Settings = () => {
           return;
         }
 
-        const response = await fetch("http://127.0.0.1:8000/users/profile", {
+        const response = await fetch("https://supe-cook-backend.vercel.app/users/profile", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,
@@ -57,7 +57,7 @@ const Settings = () => {
         return;
       }
 
-      const response = await fetch("http://127.0.0.1:8000/users/", {
+      const response = await fetch("https://supe-cook-backend.vercel.app/users/", {
         method: "PUT", // PUT request to update profile
         headers: {
           "Content-Type": "application/json",
@@ -95,7 +95,7 @@ const Settings = () => {
         return;
       }
 
-      const response = await fetch("http://127.0.0.1:8000/users/delete_account/", {
+      const response = await fetch("https://supe-cook-backend.vercel.app/users/delete_account/", {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
