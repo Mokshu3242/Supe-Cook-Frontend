@@ -148,7 +148,7 @@ const RecipeCard = ({ recipe }) => {
         <img
           src={`${recipe.Image_Name}.jpg`}
           alt={recipe.Image_Name || "No Title"}
-          className="w-full h-48 sm:w-20 object-cover rounded-lg mb-4 sm:mb-0 sm:mr-4"
+          className="w-full h-48 sm:w-60 object-cover rounded-lg mb-4 sm:mb-0 sm:mr-4"
         />
 
         {/* Recipe Details */}
