@@ -132,7 +132,7 @@ const RecipeCard = ({ recipe }) => {
   const openModal = () => {
     console.log(
       "Opened Recipe Image:",
-      recipe.Image_Name || "default-image.jpg"
+      recipe.Image_Name || "default-image.webp"
     );
     setModalIsOpen(true);
   };
@@ -141,12 +141,12 @@ const RecipeCard = ({ recipe }) => {
     <>
       {/* Recipe Card */}
       <div
-        className="flex flex-col sm:flex-row items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition cursor-pointer"
+        className="flex flex-col sm:flex-row items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition cursor-pointer "
         onClick={openModal}
       >
         {/* Recipe Image */}
         <img
-          src={`${recipe.Image_Name}.jpg`}
+          src={`${recipe.Image_Name}.webp`}
           alt={recipe.Image_Name || "No Title"}
           className="w-full h-48 sm:w-60 object-cover rounded-lg mb-4 sm:mb-0 sm:mr-4"
         />
@@ -260,7 +260,7 @@ const RecipeCard = ({ recipe }) => {
           {/* Image Section */}
           <div className="sm:w-1/2 flex-none mb-4 sm:mb-0">
             <img
-              src={`${recipe.Image_Name}.jpg`}
+              src={`${recipe.Image_Name}.webp`}
               alt={recipe.Title || "No Title Available"}
               className="w-full h-full object-cover rounded-lg"
             />
