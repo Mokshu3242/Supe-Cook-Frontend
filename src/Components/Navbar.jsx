@@ -15,7 +15,7 @@ const Navbar = () => {
   useEffect(() => {
     if (Authuser) {
       axios
-        .get("http://127.0.0.1:8000/users/profile", {
+        .get("https://supe-cook-backend.vercel.app/users/profile", {
           headers: { Authorization: `Bearer ${Authuser}` },
         })
         .then((response) => {
